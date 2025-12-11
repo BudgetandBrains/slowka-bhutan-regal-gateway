@@ -17,7 +17,7 @@ const FounderSection = () => {
         {/* Founder Content */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Image */}
-          <div className="relative">
+          <div className="relative max-w-sm mx-auto lg:mx-0">
             <div className="aspect-[4/5] overflow-hidden rounded-sm">
               <img
                 src={founderImage}
@@ -26,7 +26,7 @@ const FounderSection = () => {
               />
             </div>
             {/* Decorative element */}
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 border-2 border-gold/30 rounded-sm -z-10" />
+            <div className="absolute -bottom-4 -right-4 w-24 h-24 border-2 border-gold/30 rounded-sm -z-10" />
           </div>
 
           {/* Content */}
