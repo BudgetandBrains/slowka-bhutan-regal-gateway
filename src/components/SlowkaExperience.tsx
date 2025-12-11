@@ -101,7 +101,7 @@ const SlowkaExperience = () => {
           <div className="mt-6 flex items-center justify-center gap-4">
             <div className="w-12 h-px bg-gold/50" />
             <span className="font-body text-gold text-sm tracking-wider">
-              Tshering Dorji, Founder
+              Dilu Giri, Founder
             </span>
             <div className="w-12 h-px bg-gold/50" />
           </div>
