@@ -3,11 +3,11 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import WhyBhutan from "@/components/WhyBhutan";
 import SlowkaExperience from "@/components/SlowkaExperience";
+import FounderSection from "@/components/FounderSection";
 import SignatureJourneys from "@/components/SignatureJourneys";
 import MomentsFromBhutan from "@/components/MomentsFromBhutan";
 import PartnerCTA from "@/components/PartnerCTA";
 import Footer from "@/components/Footer";
-
 const Index = () => {
   return (
     <>
@@ -29,6 +29,7 @@ const Index = () => {
         <Hero />
         <WhyBhutan />
         <SlowkaExperience />
+        <FounderSection />
         <SignatureJourneys />
         <MomentsFromBhutan />
         <PartnerCTA />
