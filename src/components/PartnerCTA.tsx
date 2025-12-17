@@ -22,7 +22,7 @@ const PartnerCTA = () => {
             <p className="font-body text-muted-foreground leading-relaxed mb-8">
               Whether you're a boutique travel agency, a global tour operator,
               or a corporate travel planner, Slowka Bhutan is your trusted
-              ground partner. We handle the details—you deliver the dreams.
+              ground partner. We handle the details - you deliver the dreams.
             </p>
 
             {/* Benefits */}

@@ -40,7 +40,7 @@ export const itineraries: Itinerary[] = [
     title: "Sacred Bhutan",
     duration: "4 Days, 3 Nights",
     tagline: "A short, sweet, and unforgettable taste of Bhutan.",
-    description: "Perfect for travelers short on time, this compact journey delivers Bhutan's essential highlights—splitting your stay between energetic Thimphu and the tranquil Paro Valley, home of the legendary Tiger's Nest Monastery. In just four days, you'll sample sacred sites, mountain scenery, and Bhutan's famously warm hospitality.",
+    description: "Perfect for travelers short on time, this compact journey delivers Bhutan's essential highlights - splitting your stay between energetic Thimphu and the tranquil Paro Valley, home of the legendary Tiger's Nest Monastery. In just four days, you'll sample sacred sites, mountain scenery, and Bhutan's famously warm hospitality.",
     tags: ["Thimphu", "Paro", "Tiger's Nest", "Dzongs", "Short Trip"],
     image: tigersNest,
     atAGlance: [
@@ -84,7 +84,7 @@ export const itineraries: Itinerary[] = [
       {
         day: 3,
         title: "Tiger's Nest or a Scenic Pass",
-        description: "Hike to Tiger's Nest, an unforgettable cliff-side monastery—challenging but rewarding, taken at your own pace. Prefer something gentler? Choose a scenic drive to Chele La Pass, visit a quiet nunnery, and explore cliff-side temples.",
+        description: "Hike to Tiger's Nest, an unforgettable cliff-side monastery - challenging but rewarding, taken at your own pace. Prefer something gentler? Choose a scenic drive to Chele La Pass, visit a quiet nunnery, and explore cliff-side temples.",
         stay: "Tashi Namgay Resort"
       },
       {
@@ -96,7 +96,7 @@ export const itineraries: Itinerary[] = [
     bookingDetails: [
       "Deposit: $200 per person secures your spot (credit card/PayPal, no fee)",
       "Balance: Due 70 days before travel (wire/check no fee; credit card +4%)",
-      "Visas: Simply send your passport copy and photo—we handle everything and email your approved visa."
+      "Visas: Simply send your passport copy and photo - we handle everything and email your approved visa."
     ]
   },
   {
@@ -104,7 +104,7 @@ export const itineraries: Itinerary[] = [
     title: "Bhutan in 5 Days: A Journey Within",
     duration: "5 Days, 4 Nights",
     tagline: "Five days of culture, mountains, monasteries, and mindful discovery.",
-    description: "This scenic introduction to Bhutan blends the energy of Thimphu, the calm of the Paro Valley, and the thrill of hiking to Tiger's Nest. Explore ancient temples, dramatic fortresses, and timeless traditions—set against sweeping Himalayan landscapes. A perfect short journey for travelers seeking depth without rushing.",
+    description: "This scenic introduction to Bhutan blends the energy of Thimphu, the calm of the Paro Valley, and the thrill of hiking to Tiger's Nest. Explore ancient temples, dramatic fortresses, and timeless traditions - set against sweeping Himalayan landscapes. A perfect short journey for travelers seeking depth without rushing.",
     tags: ["Thimphu", "Paro", "Tiger's Nest", "Temples", "Culture"],
     image: wellnessBath,
     atAGlance: [
@@ -150,7 +150,7 @@ export const itineraries: Itinerary[] = [
       {
         day: 3,
         title: "Into the Paro Valley",
-        description: "A relaxed drive brings you to peaceful Paro—all mountains, fields, and heritage. Visit Kyichu Lhakhang, the ruins of Drugyal Dzong, and enjoy distant views of Tiger's Nest. Continue to the National Museum and Paro Dzong.",
+        description: "A relaxed drive brings you to peaceful Paro - all mountains, fields, and heritage. Visit Kyichu Lhakhang, the ruins of Drugyal Dzong, and enjoy distant views of Tiger's Nest. Continue to the National Museum and Paro Dzong.",
         stay: "Tashi Namgay Resort (riverside, traditional-modern blend)"
       },
       {
@@ -168,8 +168,8 @@ export const itineraries: Itinerary[] = [
     bookingDetails: [
       "Deposit: $200 per person (credit card/PayPal, no fee). Non-refundable but usually transferable if you cancel ≥90 days before travel.",
       "Balance: Due 70 days prior (wire/check no fee; credit card +4%).",
-      "Visas: We handle everything—just send your passport copy + photo.",
-      "It's your tour—flexible, private, and designed around your pace and interests."
+      "Visas: We handle everything - just send your passport copy + photo.",
+      "It's your tour - flexible, private, and designed around your pace and interests."
     ]
   },
   {
@@ -177,7 +177,7 @@ export const itineraries: Itinerary[] = [
     title: "Mystical Bhutan: A 6-Day Escape",
     duration: "6 Days, 5 Nights",
     tagline: "Six days of mountains, monasteries, living culture, and mindful discovery.",
-    description: "This immersive journey takes you through Paro, Punakha, and Thimphu—Bhutan's western valleys rich in heritage and Himalayan beauty. Explore fortresses, hilltop temples, traditional villages, and the legendary Tiger's Nest, all while experiencing Bhutan's signature warmth and hospitality.",
+    description: "This immersive journey takes you through Paro, Punakha, and Thimphu - Bhutan's western valleys rich in heritage and Himalayan beauty. Explore fortresses, hilltop temples, traditional villages, and the legendary Tiger's Nest, all while experiencing Bhutan's signature warmth and hospitality.",
     tags: ["Paro", "Punakha", "Thimphu", "Dochula Pass", "Tiger's Nest", "Dzongs"],
     image: prayerFlags,
     atAGlance: [
@@ -231,13 +231,13 @@ export const itineraries: Itinerary[] = [
       {
         day: 4,
         title: "A Day in the Capital",
-        description: "Customize your exploration—options include the Buddha Dordenma, traditional arts school, takin sanctuary, textile museum, or weekend market. Thimphu offers a rare blend of heritage and contemporary life.",
+        description: "Customize your exploration - options include the Buddha Dordenma, traditional arts school, takin sanctuary, textile museum, or weekend market. Thimphu offers a rare blend of heritage and contemporary life.",
         stay: "The Seva Hotel (new, sustainable, central)"
       },
       {
         day: 5,
         title: "The Tiger's Nest",
-        description: "Drive back to Paro and ascend through forests and prayer flags to Taktsang (Tiger's Nest)—dramatically perched on a cliff and unforgettable to reach. Return for a relaxing final evening.",
+        description: "Drive back to Paro and ascend through forests and prayer flags to Taktsang (Tiger's Nest) - dramatically perched on a cliff and unforgettable to reach. Return for a relaxing final evening.",
         stay: "Tashi Namgay Resort"
       },
       {
@@ -249,15 +249,15 @@ export const itineraries: Itinerary[] = [
     bookingDetails: [
       "Deposit: $200 per person (credit card/PayPal, no fee). Non-refundable but usually transferable ≥90 days before travel.",
       "Balance: Due 70 days prior (wire/check no fee; credit cards +4%).",
-      "Visas: We handle everything—just send your passport copy + photo.",
-      "This private journey is flexible—adjust timing, activities, and pace anytime. It's your escape into Bhutan's magic."
+      "Visas: We handle everything - just send your passport copy + photo.",
+      "This private journey is flexible - adjust timing, activities, and pace anytime. It's your escape into Bhutan's magic."
     ]
   },
   {
     id: "dragon-kingdom-week",
     title: "The Dragon Kingdom in a Week",
     duration: "7 Days, 6 Nights",
-    tagline: "A week inside Bhutan feels like stepping into another world—where mountains touch the sky, monasteries hum with prayer, and the pace of life gently slows down.",
+    tagline: "A week inside Bhutan feels like stepping into another world - where mountains touch the sky, monasteries hum with prayer, and the pace of life gently slows down.",
     description: "This journey gives you a full taste of Bhutan's capital, valleys, temples, fortresses, and legendary hikes without ever feeling rushed. This is a perfectly-paced introduction to Bhutan's three signature valleys—Thimphu, Punakha & Paro. Expect dramatic Himalayan passes, riverside fortresses, sacred temples, rural villages, and the unforgettable Tiger's Nest hike.",
     tags: ["Thimphu", "Punakha", "Paro", "Happiness", "Passes", "Monasteries", "Tiger's Nest", "Dzongs", "Culture", "Valley Views"],
     image: riceTerraces,
@@ -303,7 +303,7 @@ export const itineraries: Itinerary[] = [
       {
         day: 2,
         title: "Discover Thimphu, Your Way",
-        description: "This is a choose-your-own-wonder day. Visit the Buddha Dordenma statue overlooking the entire valley, step into the School of Traditional Arts to watch students practice ancient crafts, and meet Bhutan's national animal—the quirky takin. In the evening, explore local life, sip a coffee, or browse handicrafts.",
+        description: "This is a choose-your-own-wonder day. Visit the Buddha Dordenma statue overlooking the entire valley, step into the School of Traditional Arts to watch students practice ancient crafts, and meet Bhutan's national animal - the quirky takin. In the evening, explore local life, sip a coffee, or browse handicrafts.",
         stay: "Capital Hotel or The Seva Hotel"
       },
       {
@@ -321,13 +321,13 @@ export const itineraries: Itinerary[] = [
       {
         day: 5,
         title: "The Heritage Trails of Paro",
-        description: "Today is about history and landscape: visit sacred Kyichu Lhakhang—one of the oldest temples in Bhutan, explore the National Museum inside an ancient watchtower, and drop into a traditional farmhouse to see rural life up close. Wander through Paro town for crafts, antiques, or steaming momos.",
+        description: "Today is about history and landscape: visit sacred Kyichu Lhakhang - one of the oldest temples in Bhutan, explore the National Museum inside an ancient watchtower, and drop into a traditional farmhouse to see rural life up close. Wander through Paro town for crafts, antiques, or steaming momos.",
         stay: "Tashi Namgay Resort"
       },
       {
         day: 6,
         title: "The Tiger's Nest Experience",
-        description: "The moment you've been waiting for. Hike through pine forests to reach the cliff-hugging Tiger's Nest Monastery—Bhutan's most iconic site. It's a moderate climb, an emotional achievement, and a memory that stays forever. Prefer to skip the ascent? Your guide will curate alternative visits in the valley.",
+        description: "The moment you've been waiting for. Hike through pine forests to reach the cliff-hugging Tiger's Nest Monastery - Bhutan's most iconic site. It's a moderate climb, an emotional achievement, and a memory that stays forever. Prefer to skip the ascent? Your guide will curate alternative visits in the valley.",
         stay: "Tashi Namgay Resort"
       },
       {
@@ -339,7 +339,7 @@ export const itineraries: Itinerary[] = [
     bookingDetails: [
       "Deposit: 200 USD per person (credit card or PayPal, no fees). Non-refundable but transferable if cancelled 90+ days before departure.",
       "Balance: Due 70 days before the trip. Can be paid by wire/cheque (no fee) or credit card (+4%).",
-      "Visa Made Simple: Just send a passport copy + a digital photo. Your approved visa and travel documents arrive by email—easy and stress-free.",
+      "Visa Made Simple: Just send a passport copy + a digital photo. Your approved visa and travel documents arrive by email - easy and stress-free.",
       "Your Tour, Your Pace: This is a private trip, built for flexibility. Want to start late, swap a stop, or add an experience? Your guide will tailor the journey as you go."
     ]
   },
@@ -348,7 +348,7 @@ export const itineraries: Itinerary[] = [
     title: "Gateway to Happiness: 8 Days in Bhutan",
     duration: "8 Days, 7 Nights",
     tagline: "Your perfect first journey into the Land of the Thunder Dragon.",
-    description: "Discover Bhutan at an easy, enjoyable pace—designed for travelers who want rich cultural immersion without long days on the road. This 8-day introduction focuses on the highlights of Western Bhutan, with a stunning glimpse into its alpine heartlands. Begin in Thimphu, cross dramatic passes, descend into the protected Phobjikha Valley—winter home of black-necked cranes—explore Punakha, and culminate with the iconic Tiger's Nest hike.",
+    description: "Discover Bhutan at an easy, enjoyable pace - designed for travelers who want rich cultural immersion without long days on the road. This 8-day introduction focuses on the highlights of Western Bhutan, with a stunning glimpse into its alpine heartlands. Begin in Thimphu, cross dramatic passes, descend into the protected Phobjikha Valley - winter home of black-necked cranes - explore Punakha, and culminate with the iconic Tiger's Nest hike.",
     tags: ["Thimphu", "Punakha", "Paro", "Phobjikha Valley", "Gangtey", "Black-Necked Cranes", "Tiger's Nest", "Dochula Pass"],
     image: monksMonastery,
     atAGlance: [
@@ -422,7 +422,7 @@ export const itineraries: Itinerary[] = [
       {
         day: 7,
         title: "Hike to Tiger's Nest",
-        description: "The culmination of your journey—hike through pine forests to the cliff-side Tiger's Nest Monastery at 3,120m.",
+        description: "The culmination of your journey - hike through pine forests to the cliff-side Tiger's Nest Monastery at 3,120m.",
         stay: "Hotel in Paro"
       },
       {

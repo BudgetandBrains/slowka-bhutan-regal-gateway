@@ -18,7 +18,7 @@ const features = [
     icon: Leaf,
     title: "Carbon Negative",
     description:
-      "Bhutan absorbs more carbon than it produces—a true sanctuary for eco-conscious travelers.",
+      "Bhutan absorbs more carbon than it produces - a true sanctuary for eco-conscious travelers.",
   },
   {
     icon: Sparkles,
@@ -45,7 +45,7 @@ const WhyBhutan = () => {
           </h2>
           <p className="font-body text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             In a world rushing forward, Bhutan invites you to pause. Here,
-            happiness is not pursued—it is cultivated, measured, and protected
+            happiness is not pursued - it is cultivated, measured, and protected
             by the very constitution of the land.
           </p>
         </div>
@@ -102,7 +102,7 @@ const WhyBhutan = () => {
               encouraged by law."
             </p>
             <span className="font-body text-gold text-sm">
-              — A Kingdom Unlike Any Other
+              A Kingdom Unlike Any Other
             </span>
           </div>
         </div>

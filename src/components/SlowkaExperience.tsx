@@ -94,7 +94,7 @@ const SlowkaExperience = () => {
         {/* Philosophy Quote */}
         <div className="mt-20 text-center">
           <blockquote className="font-display text-2xl md:text-3xl italic text-primary-foreground/90 max-w-3xl mx-auto">
-            "Slowka means 'to slow down'. It is not just our name—it
+            "Slowka means 'to slow down'. It is not just our name - it
             is our philosophy, our gift to every traveler who walks this sacred
             land."
           </blockquote>
