@@ -4,7 +4,7 @@ import prayerFlags from "@/assets/prayer-flags.jpg";
 import riceTerraces from "@/assets/rice-terraces.jpg";
 import wellnessBath from "@/assets/wellness-bath.jpg";
 import tigersNest from "@/assets/tigers-nest.jpg";
-import heroBhutan from "@/assets/hero-bhutan.jpg";
+import goldenHour from "@/assets/golden-hour.jpg";
 
 const moments = [
   {
