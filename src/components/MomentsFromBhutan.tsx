@@ -43,7 +43,7 @@ const moments = [
     fact: "The monastery sits at 3,120 meters (10,240 ft) above sea level.",
   },
   {
-    image: heroBhutan,
+    image: goldenHour,
     title: "Golden Hour",
     story:
       "As the sun sets over the Himalayas, the last light paints ancient dzongs in gold—a daily reminder of Bhutan's timeless beauty.",
