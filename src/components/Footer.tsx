@@ -99,7 +99,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-gold hover:text-gold-light transition-colors"
             >
-              budgetandbrains.com
+              Budget and Brains
             </a>
           </p>
         </div>
