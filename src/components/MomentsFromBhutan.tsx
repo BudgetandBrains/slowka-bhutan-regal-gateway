@@ -5,54 +5,50 @@ import riceTerraces from "@/assets/rice-terraces.jpg";
 import wellnessBath from "@/assets/wellness-bath.jpg";
 import tigersNest from "@/assets/tigers-nest.jpg";
 import goldenHour from "@/assets/golden-hour.jpg";
-
-const moments = [
-  {
-    image: monksMonastery,
-    title: "Morning Prayers",
-    story:
-      "At dawn, the sound of conch shells echoes through monastery halls as monks begin their daily prayers—a tradition unchanged for centuries.",
-    fact: "Bhutan has over 2,000 monasteries and temples.",
-  },
-  {
-    image: prayerFlags,
-    title: "Wind Prayers",
-    story:
-      "Colorful prayer flags flutter across mountain passes, carrying mantras and blessings on the wind to all sentient beings.",
-    fact: "Each color represents an element: blue (sky), white (air), red (fire), green (water), yellow (earth).",
-  },
-  {
-    image: riceTerraces,
-    title: "Valley of Life",
-    story:
-      "Farmers tend rice paddies using methods passed down through generations, in harmony with the rhythms of nature.",
-    fact: "72% of Bhutan remains under forest cover by constitutional mandate.",
-  },
-  {
-    image: wellnessBath,
-    title: "Ancient Healing",
-    story:
-      "Hot stone baths, known as 'dotsho', have been a cornerstone of Bhutanese wellness for centuries—river stones heated and placed in wooden tubs.",
-    fact: "Traditional medicine (Sowa Rigpa) is provided free by the government.",
-  },
-  {
-    image: tigersNest,
-    title: "Sacred Heights",
-    story:
-      "Legend says Guru Rinpoche flew to this cliff on the back of a tigress to meditate and bring Buddhism to Bhutan.",
-    fact: "The monastery sits at 3,120 meters (10,240 ft) above sea level.",
-  },
-  {
-    image: goldenHour,
-    title: "Golden Hour",
-    story:
-      "As the sun sets over the Himalayas, the last light paints ancient dzongs in gold—a daily reminder of Bhutan's timeless beauty.",
-    fact: "Bhutan measures success through Gross National Happiness, not GDP.",
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const MomentsFromBhutan = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const { t } = useLanguage();
+
+  const moments = [
+    {
+      image: monksMonastery,
+      title: t("moments.1.title"),
+      story: t("moments.1.story"),
+      fact: t("moments.1.fact"),
+    },
+    {
+      image: prayerFlags,
+      title: t("moments.2.title"),
+      story: t("moments.2.story"),
+      fact: t("moments.2.fact"),
+    },
+    {
+      image: riceTerraces,
+      title: t("moments.3.title"),
+      story: t("moments.3.story"),
+      fact: t("moments.3.fact"),
+    },
+    {
+      image: wellnessBath,
+      title: t("moments.4.title"),
+      story: t("moments.4.story"),
+      fact: t("moments.4.fact"),
+    },
+    {
+      image: tigersNest,
+      title: t("moments.5.title"),
+      story: t("moments.5.story"),
+      fact: t("moments.5.fact"),
+    },
+    {
+      image: goldenHour,
+      title: t("moments.6.title"),
+      story: t("moments.6.story"),
+      fact: t("moments.6.fact"),
+    },
+  ];
 
   return (
     <section id="moments" className="section-padding bg-background">
@@ -60,14 +56,13 @@ const MomentsFromBhutan = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-gold text-xs tracking-[0.4em] uppercase font-body block mb-4">
-            Stories & Traditions
+            {t("moments.tagline")}
           </span>
           <h2 className="font-display text-3xl md:text-5xl text-foreground mb-6">
-            Moments from Bhutan
+            {t("moments.title")}
           </h2>
           <p className="font-body text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Hover over each image to discover the stories and cultural wisdom
-            that make Bhutan unlike anywhere else on Earth.
+            {t("moments.description")}
           </p>
         </div>
 
@@ -127,7 +122,7 @@ const MomentsFromBhutan = () => {
                 <div className="mt-auto">
                   <div className="bg-gold/20 backdrop-blur-sm border border-gold/30 p-3 rounded-sm">
                     <span className="text-gold-light text-xs tracking-wider uppercase block mb-1 font-body">
-                      Did you know?
+                      {t("moments.didYouKnow")}
                     </span>
                     <p className="font-body text-xs text-primary-foreground/80">
                       {moment.fact}

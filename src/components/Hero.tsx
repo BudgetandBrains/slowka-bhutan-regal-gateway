@@ -1,8 +1,11 @@
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBhutan from "@/assets/hero-bhutan.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Hero = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -21,29 +24,28 @@ const Hero = () => {
         <div className="flex items-center justify-center gap-4 mb-8 animate-fade-up opacity-0" style={{ animationDelay: "200ms", animationFillMode: "forwards" }}>
           <div className="w-16 h-px bg-gold-light/60" />
           <span className="text-gold-light text-xs tracking-[0.4em] uppercase font-body">
-            The Kingdom of Happiness
+            {t("hero.tagline")}
           </span>
           <div className="w-16 h-px bg-gold-light/60" />
         </div>
 
         {/* Main Tagline */}
         <h1 className="font-display text-4xl md:text-6xl lg:text-7xl text-primary-foreground leading-tight mb-6 animate-fade-up opacity-0" style={{ animationDelay: "400ms", animationFillMode: "forwards" }}>
-          Where Time Slows,
+          {t("hero.title1")}
           <br />
-          <span className="italic font-light">Stories Begin</span>
+          <span className="italic font-light">{t("hero.title2")}</span>
         </h1>
 
         {/* Subtitle */}
         <p className="font-body text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-up opacity-0" style={{ animationDelay: "600ms", animationFillMode: "forwards" }}>
-          Curating transformative journeys through the last Himalayan kingdom
-          for discerning travel partners worldwide.
+          {t("hero.subtitle")}
         </p>
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up opacity-0" style={{ animationDelay: "800ms", animationFillMode: "forwards" }}>
           <a href="#journeys">
             <Button variant="hero-gold" size="xl">
-              Explore Journeys
+              {t("hero.cta")}
             </Button>
           </a>
         </div>
@@ -56,7 +58,7 @@ const Hero = () => {
         style={{ animationDelay: "1000ms", animationFillMode: "forwards" }}
       >
         <span className="text-xs tracking-[0.3em] uppercase font-body">
-          Discover
+          {t("hero.discover")}
         </span>
         <ChevronDown className="w-5 h-5 animate-bounce" />
       </a>

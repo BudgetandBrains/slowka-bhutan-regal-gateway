@@ -1,7 +1,17 @@
-import { Button } from "@/components/ui/button";
 import { Mail } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const PartnerCTA = () => {
+  const { t } = useLanguage();
+
+  const benefits = [
+    t("partner.benefit1"),
+    t("partner.benefit2"),
+    t("partner.benefit3"),
+    t("partner.benefit4"),
+    t("partner.benefit5"),
+  ];
+
   return (
     <section className="section-padding bg-card border-t border-border relative overflow-hidden">
       {/* Decorative Pattern */}
@@ -12,28 +22,20 @@ const PartnerCTA = () => {
           {/* Left Content */}
           <div>
             <span className="text-gold text-xs tracking-[0.4em] uppercase font-body block mb-4">
-              For Travel Partners
+              {t("partner.tagline")}
             </span>
             <h2 className="font-display text-3xl md:text-5xl text-foreground mb-6">
-              Let's Create
+              {t("partner.title1")}
               <br />
-              <span className="italic font-light">Together</span>
+              <span className="italic font-light">{t("partner.title2")}</span>
             </h2>
             <p className="font-body text-muted-foreground leading-relaxed mb-8">
-              Whether you're a boutique travel agency, a global tour operator,
-              or a corporate travel planner, Slowka Bhutan is your trusted
-              ground partner. We handle the details - you deliver the dreams.
+              {t("partner.description")}
             </p>
 
             {/* Benefits */}
             <div className="space-y-4 mb-8">
-              {[
-                "Competitive B2B pricing and commission structures",
-                "White-label itinerary support for your brand",
-                "24/7 on-ground assistance for your clients",
-                "Marketing materials and high-resolution imagery",
-                "FAM trips for qualifying partners",
-              ].map((benefit, index) => (
+              {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <div className="w-1.5 h-1.5 rounded-full bg-gold mt-2 shrink-0" />
                   <span className="font-body text-foreground text-sm">
@@ -42,20 +44,16 @@ const PartnerCTA = () => {
                 </div>
               ))}
             </div>
-
-            <Button variant="gold" size="lg">
-              Become a Partner
-            </Button>
           </div>
 
           {/* Right - Contact Info */}
           <div className="bg-background border border-gold/20 p-8 md:p-10 flex flex-col justify-center">
             <h3 className="font-display text-2xl text-foreground mb-6">
-              Get in Touch
+              {t("partner.getInTouch")}
             </h3>
             
             <p className="font-body text-muted-foreground leading-relaxed mb-8">
-              Ready to partner with us? Reach out directly and let's start a conversation about how we can work together.
+              {t("partner.contactDescription")}
             </p>
 
             <div className="space-y-6">
@@ -65,7 +63,7 @@ const PartnerCTA = () => {
                 </div>
                 <div>
                   <span className="font-body text-xs tracking-wider uppercase text-muted-foreground block mb-1">
-                    Email Us
+                    {t("partner.emailUs")}
                   </span>
                   <a 
                     href="mailto:journeys@slowkabhutan.com" 
