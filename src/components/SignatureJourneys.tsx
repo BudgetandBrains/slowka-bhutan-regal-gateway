@@ -97,9 +97,6 @@ const SignatureJourneys = () => {
             Looking for something unique? We specialize in bespoke journeys
             tailored to your clients' specific interests.
           </p>
-          <Button variant="gold" size="lg">
-            Request Custom Itinerary
-          </Button>
         </div>
       </div>
     </section>

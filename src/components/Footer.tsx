@@ -40,27 +40,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Partner */}
-          <div>
-            <h4 className="font-display text-lg mb-6">Partners</h4>
-            <ul className="space-y-3">
-              {[
-                "Become a Partner",
-                "B2B Portal",
-                "FAM Trips",
-                "Marketing Resources",
-              ].map((link) => (
-                <li key={link}>
-                  <a
-                    href="#"
-                    className="font-body text-sm text-primary-foreground/70 hover:text-gold transition-colors"
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
 
           {/* Contact */}
           <div>

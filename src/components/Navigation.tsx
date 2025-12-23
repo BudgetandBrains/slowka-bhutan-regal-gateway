@@ -71,13 +71,6 @@ const Navigation = () => {
               {link.name}
             </a>
           ))}
-          <Button
-            variant={isScrolled ? "gold" : "hero"}
-            size="sm"
-            className="ml-4"
-          >
-            Partner With Us
-          </Button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -110,9 +103,6 @@ const Navigation = () => {
               {link.name}
             </a>
           ))}
-          <Button variant="gold" className="mt-4">
-            Partner With Us
-          </Button>
         </div>
       </div>
     </nav>
