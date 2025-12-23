@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Menu, X, Globe } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,11 +18,15 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
-    { name: "Why Bhutan", href: "#why-bhutan" },
-    { name: "Experience", href: "#experience" },
-    { name: "Journeys", href: "#journeys" },
-    { name: "Moments", href: "#moments" },
+    { name: t("nav.whyBhutan"), href: "#why-bhutan" },
+    { name: t("nav.experience"), href: "#experience" },
+    { name: t("nav.journeys"), href: "#journeys" },
+    { name: t("nav.moments"), href: "#moments" },
   ];
+
+  const toggleLanguage = () => {
+    setLanguage(language === "en" ? "fr" : "en");
+  };
 
   return (
     <nav
@@ -71,6 +76,20 @@ const Navigation = () => {
               {link.name}
             </a>
           ))}
+          
+          {/* Language Toggle */}
+          <button
+            onClick={toggleLanguage}
+            className={cn(
+              "flex items-center gap-2 font-body text-sm tracking-wider uppercase transition-all duration-300 hover:opacity-70 ml-4 px-3 py-1.5 border rounded-sm",
+              isScrolled
+                ? "text-foreground border-gold/30 hover:border-gold"
+                : "text-primary-foreground/90 border-primary-foreground/30 hover:border-primary-foreground"
+            )}
+          >
+            <Globe className="w-4 h-4" />
+            <span>{language === "en" ? "FR" : "EN"}</span>
+          </button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -103,6 +122,15 @@ const Navigation = () => {
               {link.name}
             </a>
           ))}
+          
+          {/* Mobile Language Toggle */}
+          <button
+            onClick={toggleLanguage}
+            className="flex items-center gap-2 font-body text-sm tracking-wider uppercase text-foreground py-2 border-b border-border/50"
+          >
+            <Globe className="w-4 h-4" />
+            <span>{language === "en" ? "Français" : "English"}</span>
+          </button>
         </div>
       </div>
     </nav>

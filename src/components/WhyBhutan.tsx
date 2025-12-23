@@ -1,34 +1,33 @@
 import { Leaf, Mountain, Heart, Sparkles } from "lucide-react";
 import tigersNest from "@/assets/tigers-nest.jpg";
-
-const features = [
-  {
-    icon: Mountain,
-    title: "Pristine Landscapes",
-    description:
-      "Untouched Himalayan valleys, ancient forests, and sacred peaks that have inspired seekers for millennia.",
-  },
-  {
-    icon: Heart,
-    title: "Gross National Happiness",
-    description:
-      "The world's only nation that measures prosperity through the well-being of its people and environment.",
-  },
-  {
-    icon: Leaf,
-    title: "Carbon Negative",
-    description:
-      "Bhutan absorbs more carbon than it produces - a true sanctuary for eco-conscious travelers.",
-  },
-  {
-    icon: Sparkles,
-    title: "Living Heritage",
-    description:
-      "Ancient traditions, vibrant festivals, and Buddhist wisdom preserved through centuries of intentional isolation.",
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const WhyBhutan = () => {
+  const { t } = useLanguage();
+
+  const features = [
+    {
+      icon: Mountain,
+      title: t("whyBhutan.feature1.title"),
+      description: t("whyBhutan.feature1.description"),
+    },
+    {
+      icon: Heart,
+      title: t("whyBhutan.feature2.title"),
+      description: t("whyBhutan.feature2.description"),
+    },
+    {
+      icon: Leaf,
+      title: t("whyBhutan.feature3.title"),
+      description: t("whyBhutan.feature3.description"),
+    },
+    {
+      icon: Sparkles,
+      title: t("whyBhutan.feature4.title"),
+      description: t("whyBhutan.feature4.description"),
+    },
+  ];
+
   return (
     <section id="why-bhutan" className="section-padding bg-background relative">
       {/* Subtle Pattern */}
@@ -38,15 +37,13 @@ const WhyBhutan = () => {
         {/* Section Header */}
         <div className="text-center mb-16 md:mb-24">
           <span className="text-gold text-xs tracking-[0.4em] uppercase font-body block mb-4">
-            The Last Shangri-La
+            {t("whyBhutan.tagline")}
           </span>
           <h2 className="font-display text-3xl md:text-5xl text-foreground mb-6">
-            Why Bhutan Transforms
+            {t("whyBhutan.title")}
           </h2>
           <p className="font-body text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            In a world rushing forward, Bhutan invites you to pause. Here,
-            happiness is not pursued - it is cultivated, measured, and protected
-            by the very constitution of the land.
+            {t("whyBhutan.description")}
           </p>
         </div>
 
@@ -62,11 +59,10 @@ const WhyBhutan = () => {
             />
             <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-charcoal/90 to-transparent">
               <p className="font-display text-primary-foreground text-lg italic">
-                "Taktsang Palphug Monastery"
+                "{t("whyBhutan.imageCaption")}"
               </p>
               <p className="font-body text-primary-foreground/70 text-sm mt-1">
-                The sacred Tiger's Nest, where Guru Rinpoche meditated in the
-                8th century
+                {t("whyBhutan.imageDescription")}
               </p>
             </div>
           </div>
@@ -97,12 +93,10 @@ const WhyBhutan = () => {
         <div className="mt-20 text-center">
           <div className="inline-block bg-card border border-gold/20 px-8 py-6 max-w-2xl">
             <p className="font-display text-lg text-foreground italic mb-2">
-              "Bhutan is the only country in the world where the sale of tobacco
-              is illegal, hunting is prohibited, and wearing national dress is
-              encouraged by law."
+              "{t("whyBhutan.quote")}"
             </p>
             <span className="font-body text-gold text-sm">
-              A Kingdom Unlike Any Other
+              {t("whyBhutan.quoteCaption")}
             </span>
           </div>
         </div>

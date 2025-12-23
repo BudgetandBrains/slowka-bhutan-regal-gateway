@@ -2,8 +2,11 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { itineraries } from "@/data/itineraries";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const SignatureJourneys = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="journeys" className="section-padding bg-secondary/30 relative">
       <div className="max-w-7xl mx-auto">
@@ -11,15 +14,14 @@ const SignatureJourneys = () => {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16">
           <div>
             <span className="text-gold text-xs tracking-[0.4em] uppercase font-body block mb-4">
-              Curated Experiences
+              {t("journeys.tagline")}
             </span>
             <h2 className="font-display text-3xl md:text-5xl text-foreground">
-              Signature Journeys
+              {t("journeys.title")}
             </h2>
           </div>
           <p className="font-body text-muted-foreground max-w-md mt-4 md:mt-0 md:text-right leading-relaxed">
-            Each itinerary is a canvas—adaptable to your clients' dreams,
-            crafted with our expertise.
+            {t("journeys.description")}
           </p>
         </div>
 
@@ -82,7 +84,7 @@ const SignatureJourneys = () => {
                     variant="elegant"
                     className="w-full group/btn"
                   >
-                    <span>View Itinerary</span>
+                    <span>{t("journeys.viewItinerary")}</span>
                     <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
                   </Button>
                 </Link>
@@ -94,8 +96,7 @@ const SignatureJourneys = () => {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <p className="font-body text-muted-foreground mb-6">
-            Looking for something unique? We specialize in bespoke journeys
-            tailored to your clients' specific interests.
+            {t("journeys.bespoke")}
           </p>
         </div>
       </div>
