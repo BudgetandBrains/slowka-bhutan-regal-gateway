@@ -136,6 +136,25 @@ const translations = {
     "footer.terms": "Terms of Service",
     "footer.blessing": "Tashi Delek",
     "footer.blessingMeaning": "— May all auspicious signs come to you",
+    
+    // Itinerary Detail Page
+    "itinerary.backToJourneys": "Back to Journeys",
+    "itinerary.perPerson": "per person",
+    "itinerary.from": "From",
+    "itinerary.overview": "Overview",
+    "itinerary.atAGlance": "At a Glance",
+    "itinerary.dayByDay": "Your Journey Day by Day",
+    "itinerary.stay": "Stay",
+    "itinerary.pricing": "Pricing",
+    "itinerary.sdfNote": "Includes a",
+    "itinerary.sdfLabel": "Sustainable Development Fee (SDF)",
+    "itinerary.sdfSupport": "supporting Bhutan's local communities and environment.",
+    "itinerary.singleSupplement": "Single room supplement",
+    "itinerary.whatsIncluded": "What's Included",
+    "itinerary.notIncluded": "Not Included",
+    "itinerary.bookingInfo": "Booking Information",
+    "itinerary.requestItinerary": "Request This Itinerary",
+    "itinerary.notFound": "Itinerary Not Found",
   },
   fr: {
     // Navigation
@@ -264,6 +283,25 @@ const translations = {
     "footer.terms": "Conditions d'Utilisation",
     "footer.blessing": "Tashi Delek",
     "footer.blessingMeaning": "— Que tous les signes favorables vous accompagnent",
+    
+    // Itinerary Detail Page
+    "itinerary.backToJourneys": "Retour aux Voyages",
+    "itinerary.perPerson": "par personne",
+    "itinerary.from": "À partir de",
+    "itinerary.overview": "Aperçu",
+    "itinerary.atAGlance": "En un Coup d'Œil",
+    "itinerary.dayByDay": "Votre Voyage Jour par Jour",
+    "itinerary.stay": "Hébergement",
+    "itinerary.pricing": "Tarifs",
+    "itinerary.sdfNote": "Inclut une",
+    "itinerary.sdfLabel": "Redevance de Développement Durable (SDF)",
+    "itinerary.sdfSupport": "soutenant les communautés locales et l'environnement du Bhoutan.",
+    "itinerary.singleSupplement": "Supplément chambre individuelle",
+    "itinerary.whatsIncluded": "Ce qui est Inclus",
+    "itinerary.notIncluded": "Non Inclus",
+    "itinerary.bookingInfo": "Informations de Réservation",
+    "itinerary.requestItinerary": "Demander cet Itinéraire",
+    "itinerary.notFound": "Itinéraire Non Trouvé",
   },
 };
 
