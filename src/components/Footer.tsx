@@ -88,6 +88,21 @@ const Footer = () => {
             {t("footer.blessingMeaning")}
           </p>
         </div>
+
+        {/* Credits */}
+        <div className="mt-8 text-center">
+          <p className="font-body text-xs text-primary-foreground/40">
+            Website designed and developed by{" "}
+            <a
+              href="https://budgetandbrains.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold hover:text-gold-light transition-colors"
+            >
+              budgetandbrains.com
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
