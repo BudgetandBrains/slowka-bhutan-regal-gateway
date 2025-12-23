@@ -1,22 +1,30 @@
 import { useParams, Link } from "react-router-dom";
+import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
-import { ArrowLeft, Check, X, Calendar, MapPin, Users, Clock } from "lucide-react";
+import { ArrowLeft, Check, X, Calendar, MapPin, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getItineraryById } from "@/data/itineraries";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const ItineraryDetail = () => {
   const { id } = useParams<{ id: string }>();
   const itinerary = id ? getItineraryById(id) : undefined;
+  const { t } = useLanguage();
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
 
   if (!itinerary) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-background">
         <div className="text-center">
-          <h1 className="font-display text-4xl text-foreground mb-4">Itinerary Not Found</h1>
+          <h1 className="font-display text-4xl text-foreground mb-4">{t("itinerary.notFound")}</h1>
           <Link to="/#journeys">
-            <Button variant="gold">Back to Journeys</Button>
+            <Button variant="gold">{t("itinerary.backToJourneys")}</Button>
           </Link>
         </div>
       </div>
@@ -49,7 +57,7 @@ const ItineraryDetail = () => {
             className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors mb-6"
           >
             <ArrowLeft className="w-4 h-4" />
-            <span className="text-sm font-body tracking-wider uppercase">Back to Journeys</span>
+            <span className="text-sm font-body tracking-wider uppercase">{t("itinerary.backToJourneys")}</span>
           </Link>
 
           <div className="flex flex-wrap items-center gap-4 mb-4">
@@ -57,7 +65,7 @@ const ItineraryDetail = () => {
               {itinerary.duration}
             </span>
             <span className="text-primary-foreground/70 text-sm font-body">
-              From ${itinerary.pricing[0].price} per person
+              {t("itinerary.from")} ${itinerary.pricing[0].price} {t("itinerary.perPerson")}
             </span>
           </div>
 
@@ -78,7 +86,7 @@ const ItineraryDetail = () => {
             <div className="grid lg:grid-cols-3 gap-12">
               {/* Description */}
               <div className="lg:col-span-2">
-                <h2 className="font-display text-2xl text-foreground mb-6">Overview</h2>
+                <h2 className="font-display text-2xl text-foreground mb-6">{t("itinerary.overview")}</h2>
                 <p className="font-body text-muted-foreground leading-relaxed mb-8">
                   {itinerary.description}
                 </p>
@@ -100,7 +108,7 @@ const ItineraryDetail = () => {
               <div className="bg-card border border-border p-6">
                 <h3 className="font-display text-xl text-foreground mb-4 flex items-center gap-2">
                   <Calendar className="w-5 h-5 text-gold" />
-                  At a Glance
+                  {t("itinerary.atAGlance")}
                 </h3>
                 <ul className="space-y-3">
                   {itinerary.atAGlance.map((item, index) => (
@@ -119,7 +127,7 @@ const ItineraryDetail = () => {
         <section className="section-padding bg-secondary/30">
           <div className="max-w-7xl mx-auto">
             <h2 className="font-display text-3xl text-foreground mb-12 text-center">
-              Your Journey Day by Day
+              {t("itinerary.dayByDay")}
             </h2>
 
             <div className="space-y-8">
@@ -147,7 +155,7 @@ const ItineraryDetail = () => {
                         <div className="flex items-center gap-2 text-sm">
                           <MapPin className="w-4 h-4 text-gold" />
                           <span className="font-body text-foreground/80">
-                            <span className="text-gold">Stay:</span> {day.stay}
+                            <span className="text-gold">{t("itinerary.stay")}:</span> {day.stay}
                           </span>
                         </div>
                       )}
@@ -163,7 +171,7 @@ const ItineraryDetail = () => {
         <section className="section-padding">
           <div className="max-w-7xl mx-auto">
             <h2 className="font-display text-3xl text-foreground mb-12 text-center">
-              Pricing
+              {t("itinerary.pricing")}
             </h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
@@ -182,7 +190,7 @@ const ItineraryDetail = () => {
                     ${price.price}
                   </p>
                   <p className="font-body text-xs text-muted-foreground mt-1">
-                    per person
+                    {t("itinerary.perPerson")}
                   </p>
                 </div>
               ))}
@@ -190,9 +198,9 @@ const ItineraryDetail = () => {
 
             <div className="text-center">
               <p className="font-body text-sm text-muted-foreground">
-                Includes a <span className="text-gold">${itinerary.sdfIncluded} Sustainable Development Fee (SDF)</span> supporting Bhutan's local communities and environment.
+                {t("itinerary.sdfNote")} <span className="text-gold">${itinerary.sdfIncluded} {t("itinerary.sdfLabel")}</span> {t("itinerary.sdfSupport")}
                 {itinerary.singleSupplement && (
-                  <span> Single room supplement: ${itinerary.singleSupplement}.</span>
+                  <span> {t("itinerary.singleSupplement")}: ${itinerary.singleSupplement}.</span>
                 )}
               </p>
             </div>
@@ -203,11 +211,10 @@ const ItineraryDetail = () => {
         <section className="section-padding bg-secondary/30">
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12">
-              {/* Included */}
               <div>
                 <h3 className="font-display text-2xl text-foreground mb-6 flex items-center gap-3">
                   <Check className="w-6 h-6 text-green-500" />
-                  What's Included
+                  {t("itinerary.whatsIncluded")}
                 </h3>
                 <ul className="space-y-3">
                   {itinerary.included.map((item, index) => (
@@ -219,11 +226,10 @@ const ItineraryDetail = () => {
                 </ul>
               </div>
 
-              {/* Not Included */}
               <div>
                 <h3 className="font-display text-2xl text-foreground mb-6 flex items-center gap-3">
                   <X className="w-6 h-6 text-red-400" />
-                  Not Included
+                  {t("itinerary.notIncluded")}
                 </h3>
                 <ul className="space-y-3">
                   {itinerary.notIncluded.map((item, index) => (
@@ -242,7 +248,7 @@ const ItineraryDetail = () => {
         <section className="section-padding">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-display text-3xl text-foreground mb-8">
-              Booking Information
+              {t("itinerary.bookingInfo")}
             </h2>
             <div className="bg-card border border-border p-8 mb-8">
               <ul className="space-y-4 text-left">
@@ -255,7 +261,7 @@ const ItineraryDetail = () => {
               </ul>
             </div>
             <Button variant="gold" size="xl">
-              Request This Itinerary
+              {t("itinerary.requestItinerary")}
             </Button>
           </div>
         </section>

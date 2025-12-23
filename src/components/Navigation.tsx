@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X, Globe } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -8,6 +8,9 @@ const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { language, setLanguage, t } = useLanguage();
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHomePage = location.pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,6 +29,21 @@ const Navigation = () => {
 
   const toggleLanguage = () => {
     setLanguage(language === "en" ? "fr" : "en");
+  };
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    if (isHomePage) {
+      // On homepage, just scroll to the section
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // On other pages, navigate to homepage with hash
+      navigate("/" + href);
+    }
+    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -66,8 +84,9 @@ const Navigation = () => {
             <a
               key={link.name}
               href={link.href}
+              onClick={(e) => handleNavClick(e, link.href)}
               className={cn(
-                "font-body text-sm tracking-wider uppercase transition-all duration-300 hover:opacity-70 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:transition-all after:duration-300 hover:after:w-full",
+                "font-body text-sm tracking-wider uppercase transition-all duration-300 hover:opacity-70 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:transition-all after:duration-300 hover:after:w-full cursor-pointer",
                 isScrolled
                   ? "text-foreground after:bg-gold"
                   : "text-primary-foreground/90 after:bg-primary-foreground"
@@ -116,8 +135,8 @@ const Navigation = () => {
             <a
               key={link.name}
               href={link.href}
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="font-body text-sm tracking-wider uppercase text-foreground py-2 border-b border-border/50"
+              onClick={(e) => handleNavClick(e, link.href)}
+              className="font-body text-sm tracking-wider uppercase text-foreground py-2 border-b border-border/50 cursor-pointer"
             >
               {link.name}
             </a>
