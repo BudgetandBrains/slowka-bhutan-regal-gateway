@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail } from "lucide-react";
 
 const PartnerCTA = () => {
   return (
@@ -48,82 +48,32 @@ const PartnerCTA = () => {
             </Button>
           </div>
 
-          {/* Right - Contact Form */}
-          <div className="bg-background border border-gold/20 p-8 md:p-10">
+          {/* Right - Contact Info */}
+          <div className="bg-background border border-gold/20 p-8 md:p-10 flex flex-col justify-center">
             <h3 className="font-display text-2xl text-foreground mb-6">
-              Start a Conversation
+              Get in Touch
             </h3>
+            
+            <p className="font-body text-muted-foreground leading-relaxed mb-8">
+              Ready to partner with us? Reach out directly and let's start a conversation about how we can work together.
+            </p>
 
-            <form className="space-y-5">
-              <div className="grid md:grid-cols-2 gap-5">
-                <div>
-                  <label className="font-body text-xs tracking-wider uppercase text-muted-foreground block mb-2">
-                    Your Name
-                  </label>
-                  <input
-                    type="text"
-                    className="w-full bg-transparent border border-border focus:border-gold px-4 py-3 font-body text-foreground outline-none transition-colors"
-                    placeholder="Full name"
-                  />
+            <div className="space-y-6">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center">
+                  <Mail className="w-5 h-5 text-gold" />
                 </div>
                 <div>
-                  <label className="font-body text-xs tracking-wider uppercase text-muted-foreground block mb-2">
-                    Company
-                  </label>
-                  <input
-                    type="text"
-                    className="w-full bg-transparent border border-border focus:border-gold px-4 py-3 font-body text-foreground outline-none transition-colors"
-                    placeholder="Company name"
-                  />
+                  <span className="font-body text-xs tracking-wider uppercase text-muted-foreground block mb-1">
+                    Email Us
+                  </span>
+                  <a 
+                    href="mailto:journeys@slowkabhutan.com" 
+                    className="font-body text-lg text-foreground hover:text-gold transition-colors"
+                  >
+                    journeys@slowkabhutan.com
+                  </a>
                 </div>
-              </div>
-
-              <div>
-                <label className="font-body text-xs tracking-wider uppercase text-muted-foreground block mb-2">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  className="w-full bg-transparent border border-border focus:border-gold px-4 py-3 font-body text-foreground outline-none transition-colors"
-                  placeholder="your@email.com"
-                />
-              </div>
-
-              <div>
-                <label className="font-body text-xs tracking-wider uppercase text-muted-foreground block mb-2">
-                  Your Inquiry
-                </label>
-                <textarea
-                  rows={4}
-                  className="w-full bg-transparent border border-border focus:border-gold px-4 py-3 font-body text-foreground outline-none transition-colors resize-none"
-                  placeholder="Tell us about your travel business and how we can collaborate..."
-                />
-              </div>
-
-              <Button variant="royal" className="w-full" size="lg">
-                Send Inquiry
-              </Button>
-            </form>
-
-            {/* Contact Info */}
-            <div className="mt-8 pt-8 border-t border-border grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-gold" />
-                <span className="font-body text-sm text-muted-foreground">
-                  partners@slowka.bt
-                </span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Phone className="w-4 h-4 text-gold" />
-                <span className="font-body text-sm text-muted-foreground">
-                  +975 2 334 567
-                </span>
-              </div>
-              <div className="flex items-center gap-3">
-                <MapPin className="w-4 h-4 text-gold" />
-                <span className="font-body text-sm text-muted-foreground">
-                  Thimphu, Bhutan
-                </span>
               </div>
             </div>
           </div>
