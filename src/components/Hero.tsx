@@ -41,12 +41,11 @@ const Hero = () => {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up opacity-0" style={{ animationDelay: "800ms", animationFillMode: "forwards" }}>
-          <Button variant="hero-gold" size="xl">
-            Explore Journeys
-          </Button>
-          <Button variant="hero" size="xl">
-            Partner With Us
-          </Button>
+          <a href="#journeys">
+            <Button variant="hero-gold" size="xl">
+              Explore Journeys
+            </Button>
+          </a>
         </div>
       </div>
 
