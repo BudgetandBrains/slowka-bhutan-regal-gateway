@@ -42,22 +42,25 @@ const FounderSection = () => {
 
             <div className="space-y-4 font-body text-muted-foreground leading-relaxed">
               <p>
-                Dilu Giri is a renowned icon in Bhutan's hotel industry, celebrated for his 
-                extensive expertise and leadership. With a solid background in hotel management 
-                and specialized training in France, Austria, and Thailand, he rose through the 
-                ranks to become the Group General Manager of one of Bhutan's oldest and most 
-                prestigious hotel chains.
+                Dilu Giri's journey in hospitality began with a deep curiosity for people, 
+                places, and the way travel can shape perspective. Trained in hotel management 
+                in France, Austria, and Thailand, he spent years working closely with guests 
+                from across the world, eventually taking on the role of Group General Manager 
+                at one of Bhutan's oldest hotel chains.
               </p>
               <p>
-                After years of dedicated service, Dilu embarked on a new venture, founding 
-                Laughing Lama Hotels / Resorts / Homestays. Under this umbrella, Laughing Lama 
-                Hotels now offers a collection of 3 and 4-star properties across Bhutan, 
-                providing travellers with a promise of "home at heart" hospitality, rooted in 
-                his passion for the industry.
+                Living and working in hospitality gave Dilu a front-row seat to the reasons 
+                people travel to Bhutan. He observed that guests were not only looking for 
+                comfort or sightseeing, but for calm, meaning, and a sense of connection. 
+                Over time, this understanding shaped his belief that Bhutan offers something 
+                far more personal than a holiday. It offers space for inner reflection.
               </p>
               <p>
-                His vision blends authentic Bhutanese warmth with world-class standards, 
-                creating experiences that honor tradition while embracing excellence.
+                From hosting guests to curating journeys, Dilu's work has always been rooted 
+                in helping people slow down and experience Bhutan in a way that feels genuine 
+                and transformative. This same philosophy now forms the foundation of his travel 
+                vision, where every journey is designed to reflect the inner landscape as much 
+                as the outer one.
               </p>
             </div>
 
