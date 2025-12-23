@@ -52,16 +52,18 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <a
-        href="#why-bhutan"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground transition-colors animate-fade-up opacity-0"
-        style={{ animationDelay: "1000ms", animationFillMode: "forwards" }}
-      >
-        <span className="text-xs tracking-[0.3em] uppercase font-body">
-          {t("hero.discover")}
-        </span>
-        <ChevronDown className="w-5 h-5 animate-bounce" />
-      </a>
+      <div className="absolute bottom-8 left-0 right-0 flex justify-center">
+        <a
+          href="#why-bhutan"
+          className="flex flex-col items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground transition-colors animate-fade-up opacity-0"
+          style={{ animationDelay: "1000ms", animationFillMode: "forwards" }}
+        >
+          <span className="text-xs tracking-[0.3em] uppercase font-body">
+            {t("hero.discover")}
+          </span>
+          <ChevronDown className="w-5 h-5 animate-bounce" />
+        </a>
+      </div>
 
       {/* Decorative Corner Elements */}
       <div className="absolute top-24 left-8 w-20 h-20 border-l border-t border-gold/30 hidden lg:block" />
