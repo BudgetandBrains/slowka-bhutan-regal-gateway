@@ -62,7 +62,7 @@ const Navigation = () => {
           <img
             src={slowkaLogo}
             alt="Slowka - Journeys Within"
-            className="h-16 md:h-20 w-auto transition-all duration-300"
+            className="h-20 md:h-24 w-auto transition-all duration-300"
           />
         </Link>
 
