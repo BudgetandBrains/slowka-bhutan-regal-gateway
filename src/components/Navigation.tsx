@@ -62,10 +62,7 @@ const Navigation = () => {
           <img
             src={slowkaLogo}
             alt="Slowka - Journeys Within"
-            className={cn(
-              "h-12 md:h-14 w-auto transition-all duration-300",
-              isScrolled ? "brightness-100" : "brightness-0 invert"
-            )}
+            className="h-12 md:h-14 w-auto transition-all duration-300"
           />
         </Link>
 
