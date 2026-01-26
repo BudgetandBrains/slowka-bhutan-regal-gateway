@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
+import slowkaLogo from "@/assets/slowka-logo.png";
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -17,12 +18,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-1">
             <Link to="/" className="inline-block mb-6">
-              <span className="font-display text-3xl font-semibold tracking-wide">
-                Slowka
-              </span>
-              <span className="block text-[10px] tracking-[0.3em] uppercase text-gold-light">
-                Bhutan
-              </span>
+              <img
+                src={slowkaLogo}
+                alt="Slowka - Journeys Within"
+                className="h-16 w-auto brightness-0 invert"
+              />
             </Link>
             <p className="font-body text-sm text-primary-foreground/70 leading-relaxed">
               {t("footer.tagline")}
