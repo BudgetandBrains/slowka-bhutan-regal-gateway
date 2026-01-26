@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X, Globe } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useLanguage } from "@/contexts/LanguageContext";
+import slowkaLogo from "@/assets/slowka-logo.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -58,24 +59,14 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="group">
-          <div className="flex flex-col">
-            <span
-              className={cn(
-                "font-display text-2xl md:text-3xl font-semibold tracking-wide transition-colors duration-300",
-                isScrolled ? "text-primary" : "text-primary-foreground"
-              )}
-            >
-              Slowka
-            </span>
-            <span
-              className={cn(
-                "text-[10px] tracking-[0.3em] uppercase font-body transition-colors duration-300",
-                isScrolled ? "text-gold" : "text-gold-light"
-              )}
-            >
-              Bhutan
-            </span>
-          </div>
+          <img
+            src={slowkaLogo}
+            alt="Slowka - Journeys Within"
+            className={cn(
+              "h-12 md:h-14 w-auto transition-all duration-300",
+              isScrolled ? "brightness-100" : "brightness-0 invert"
+            )}
+          />
         </Link>
 
         {/* Desktop Navigation */}
