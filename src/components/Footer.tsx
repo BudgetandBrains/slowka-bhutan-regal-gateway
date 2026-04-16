@@ -79,8 +79,38 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Useful Links */}
+        <div className="mt-12 flex flex-wrap justify-center items-center gap-6 text-center">
+          <a
+            href="https://bhutan.travel/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-body text-sm text-primary-foreground/60 hover:text-gold transition-colors"
+          >
+            Department of Tourism Bhutan
+          </a>
+          <span className="text-primary-foreground/20">|</span>
+          <a
+            href="https://immi.gov.bt/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-body text-sm text-primary-foreground/60 hover:text-gold transition-colors"
+          >
+            Department of Immigration Bhutan
+          </a>
+          <span className="text-primary-foreground/20">|</span>
+          <a
+            href="https://www.hrab.org.bt/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-body text-sm text-primary-foreground/60 hover:text-gold transition-colors"
+          >
+            Hotel and Restaurant Association of Bhutan (HRAB)
+          </a>
+        </div>
+
         {/* Bhutanese Blessing */}
-        <div className="mt-12 text-center">
+        <div className="mt-8 text-center">
           <p className="font-display text-lg italic text-primary-foreground/40">
             "{t("footer.blessing")}"
           </p>
